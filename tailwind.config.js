@@ -15,10 +15,13 @@ module.exports = withMT({
         logoOrange: "url('/src/assets/img/logo-orange.png')",
       },
       borderWidth: {
+        1: "1px",
         3: "3px",
       },
       colors: {
+        blueWhite: "#117c8f",
         blue: "#07575b",
+        blueDark: "#003b46",
       },
       width: {
         128: "32rem",
@@ -30,6 +33,9 @@ module.exports = withMT({
       },
       lineHeight: {
         12: "45px",
+      },
+      boxShadow: {
+        "3xl": "-4px 0px 10px 0px rgba(0, 0, 0, 0.5);",
       },
     },
   },

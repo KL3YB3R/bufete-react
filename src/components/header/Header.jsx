@@ -21,7 +21,7 @@ export const Header = ({ color }) => {
   else imgMenu = <img src={iconMenu} alt="" className="w-full" />;
 
   return (
-    <Navbar className="px-5 py-0 rounded-none flex justify-between h-16 relative z-30 bg-white">
+    <Navbar className="px-5 py-0 rounded-none flex justify-between h-16 relative z-50 bg-white w-screen max-w-none">
       <Button className="w-20 h-full bg-transparent shadow-none p-3 hover:bg-transparent hover:opacity-100 hover:shadow-none">
         <img src={iconBlue} alt="" className="w-full" />
       </Button>
@@ -36,7 +36,7 @@ export const Header = ({ color }) => {
       </Button>
 
       <ul
-        className={`h-full p-0 justify-end items-center absolute top-14 left-0 w-full bg-white md:bg-transparent md:static md:flex ${
+        className={`h-max lg:h-full p-0 justify-end items-center absolute top-14 z-50 left-0 w-full bg-white md:bg-transparent md:static md:flex ${
           showMobileMenu ? "animate-showOption" : "hidden"
         }`}
       >

@@ -15,20 +15,20 @@ export const CarouselItems = ({ slides, autoSlide = false, autoSlideInterval = 3
   });
 
   return (
-    <div className="overflow-hidden relative w-screen">
+    <div className="overflow-hidden relative w-screen z-30">
       {/* SLIDES FROM CAROUSEL */}
       <div
-        className="flex transition-transform ease-out duration-500 w-max h-104 relative"
+        className="flex transition-transform z-30 ease-out duration-500 w-max h-80 md:h-100 xl:h-104  relative"
         style={{ transform: `translateX(-${curr * 100}vw)` }}
       >
         <CarouselImages slides={slides} />
       </div>
 
       {/* BUTTONS OF CAROUSEL */}
-      <div className="absolute inset-0 flex items-center justify-between p-4 px-12">
-        <button onClick={prev} className="p-1 rounded-full bg-white/30 text-blue hover:bg-white">
+      <div className="absolute inset-0 flex z-30 items-center justify-between p-4 px-0 md:px-12">
+        <button onClick={prev} className="p-1 rounded-full hover:bg-white/30 text-blue transition-all duration-150 ">
           <svg
-            className="w-10 h-10 p-1 text-gray-800 dark:text-white"
+            className="w-8 h-8 sm:w-10 sm:h-10 p-1 text-white dark:text-white"
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -43,9 +43,9 @@ export const CarouselItems = ({ slides, autoSlide = false, autoSlideInterval = 3
             />
           </svg>
         </button>
-        <button onClick={next} className="p-1 rounded-full bg-white/30 text-blue hover:bg-white">
+        <button onClick={next} className="p-1 rounded-full hover:bg-white/30 text-blue transition-all duration-150 ">
           <svg
-            className="w-10 h-10 p-1 text-gray-800 dark:text-white"
+            className="w-8 h-8 sm:w-10 sm:h-10 p-1 text-white dark:text-white"
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
