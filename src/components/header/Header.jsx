@@ -43,7 +43,7 @@ export const Header = ({ color }) => {
         <Typography as="li" className="text-black h-full flex items-center">
           <a
             href="#"
-            className="px-4 py-3 md:px-3 md:py-5 lg:p-5 text-sm w-full font-light transition-all duration-150 md:border-b-3 hover:text-white hover:bg-blue md:hover:text-black md:border-b-white md:hover:border-b-blue md:hover:bg-blue-gray-50"
+            className="px-4 py-3 md:px-3 md:py-5 lg:p-5 text-sm font-300 w-full transition-all duration-150 md:border-b-3 hover:text-white hover:bg-blue md:hover:text-black md:border-b-white md:hover:border-b-blue md:hover:bg-blue-gray-50"
           >
             ¿Quiénes somos?
           </a>
@@ -51,7 +51,7 @@ export const Header = ({ color }) => {
         <Typography as="li" className="text-black h-max flex flex-col md:flex-row items-center relative">
           <a
             href="#"
-            className={`p-4 py-3 md:px-3 md:py-5 lg:p-5 text-sm w-full font-light transition-all duration-150 md:border-b-3 hover:text-white hover:bg-blue md:hover:text-black md:border-b-white md:hover:border-b-blue md:hover:bg-blue-gray-50 ${
+            className={`p-4 py-3 md:px-3 md:py-5 lg:p-5 text-sm w-full font-300 transition-all duration-150 md:border-b-3 hover:text-white hover:bg-blue md:hover:text-black md:border-b-white md:hover:border-b-blue md:hover:bg-blue-gray-50 ${
               subOption || showOrHide
                 ? "bg-blue text-white md:bg-white md:text-black md:hover:border-b-blue md:hover:bg-blue-gray-50"
                 : ""
@@ -72,7 +72,7 @@ export const Header = ({ color }) => {
             <Typography as="li" className="p-0 w-full flex">
               <a
                 href="#"
-                className="text-sm ps-5 py-2 md:py-1 md:px-2 w-full rounded-md transition-all duration-150 hover:bg-gray-200"
+                className="text-sm ps-5 py-2 md:py-1 md:px-2 w-full font-300 rounded-md transition-all duration-150 hover:bg-gray-200"
               >
                 Consultoria Empresarial
               </a>
@@ -80,7 +80,7 @@ export const Header = ({ color }) => {
             <Typography as="li" className="p-0 w-full flex">
               <a
                 href="#"
-                className="text-sm ps-5 py-2 md:py-1 md:px-2 w-full rounded-md transition-all duration-150 hover:bg-gray-200"
+                className="text-sm ps-5 py-2 md:py-1 md:px-2 w-full font-300 rounded-md transition-all duration-150 hover:bg-gray-200"
               >
                 Abogados Expertos
               </a>
@@ -88,7 +88,7 @@ export const Header = ({ color }) => {
             <Typography as="li" className="p-0 w-full flex">
               <a
                 href="#"
-                className="text-sm ps-5 py-2 md:py-1 md:px-2 w-full rounded-md transition-all duration-150 hover:bg-gray-200"
+                className="text-sm ps-5 py-2 md:py-1 md:px-2 w-full font-300 rounded-md transition-all duration-150 hover:bg-gray-200"
               >
                 Asesoria Profesional
               </a>
@@ -98,7 +98,7 @@ export const Header = ({ color }) => {
         <Typography as="li" className="text-black h-full flex items-center">
           <a
             href="#"
-            className="p-4 md:px-3 md:py-5 lg:p-5 text-sm w-full font-light transition-all duration-150 md:border-b-3 hover:text-white hover:bg-blue md:hover:text-black md:border-b-white md:hover:border-b-blue md:hover:bg-blue-gray-50"
+            className="p-4 md:px-3 md:py-5 lg:p-5 text-sm w-full font-300 transition-all duration-150 md:border-b-3 hover:text-white hover:bg-blue md:hover:text-black md:border-b-white md:hover:border-b-blue md:hover:bg-blue-gray-50"
           >
             Criterios
           </a>
@@ -106,7 +106,7 @@ export const Header = ({ color }) => {
         <Typography as="li" className="text-black h-full flex items-center">
           <a
             href="#"
-            className="p-4 md:px-3 md:py-5 lg:p-5 text-sm w-full font-light transition-all duration-150 md:border-b-3 hover:text-white hover:bg-blue md:hover:text-black md:border-b-white md:hover:border-b-blue md:hover:bg-blue-gray-50"
+            className="p-4 md:px-3 md:py-5 lg:p-5 text-sm w-full font-300 transition-all duration-150 md:border-b-3 hover:text-white hover:bg-blue md:hover:text-black md:border-b-white md:hover:border-b-blue md:hover:bg-blue-gray-50"
           >
             Novedades
           </a>
@@ -114,7 +114,7 @@ export const Header = ({ color }) => {
         <Typography as="li" className="text-black h-full flex items-center">
           <a
             href="#"
-            className="p-4 md:px-3 md:py-5 lg:p-5 text-sm w-full font-light transition-all duration-150 md:border-b-3 hover:text-white hover:bg-blue md:hover:text-black md:border-b-white md:hover:border-b-blue md:hover:bg-blue-gray-50"
+            className="p-4 md:px-3 md:py-5 lg:p-5 text-sm w-full font-300 transition-all duration-150 md:border-b-3 hover:text-white hover:bg-blue md:hover:text-black md:border-b-white md:hover:border-b-blue md:hover:bg-blue-gray-50"
           >
             Únetenos
           </a>
@@ -122,7 +122,7 @@ export const Header = ({ color }) => {
         <Typography as="li" className="text-black h-full flex items-center">
           <a
             href="#"
-            className="p-4 md:px-3 md:py-5 lg:p-5 text-sm w-full font-light transition-all duration-150 md:border-b-3 hover:text-white hover:bg-blue md:hover:text-black md:border-b-white md:hover:border-b-blue md:hover:bg-blue-gray-50"
+            className="p-4 md:px-3 md:py-5 lg:p-5 text-sm w-full font-300 transition-all duration-150 md:border-b-3 hover:text-white hover:bg-blue md:hover:text-black md:border-b-white md:hover:border-b-blue md:hover:bg-blue-gray-50"
           >
             Contáctanos
           </a>

@@ -74,6 +74,18 @@ body {
   color: var(--white);
 }
 
+.shadow {
+  box-shadow: inset 3000px 0 0 0 rgb(0, 59, 70, 0.6);
+}
+
+.practical-cases p {
+  opacity: 0;
+}
+
+.practical-cases:hover p {
+  opacity: 1;
+}
+
 /* * OFFER YOU */
 .home-services > .text-services-container > div {
   opacity: 0;

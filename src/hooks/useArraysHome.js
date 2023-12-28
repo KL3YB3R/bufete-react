@@ -45,3 +45,21 @@ export const criteria = [
       "Si el menor de edad no es parte activa o pasiva en el proceso, no opera el fuero atrayente de los Tribunales de Protección de Niños, Niñas y Adolescentes.",
   },
 ];
+export const cases = [
+  {
+    name: "Asesoramiento y Gestion de Divorcio",
+    image: carousel2,
+  },
+  {
+    name: "Asesoramiento y Gestion de Divorcio",
+    image: carousel1,
+  },
+  {
+    name: "Asesoramiento y Gestion de Divorcio",
+    image: carousel3,
+  },
+  {
+    name: "Asesoramiento y Gestion de Divorcio",
+    image: carousel4,
+  },
+];

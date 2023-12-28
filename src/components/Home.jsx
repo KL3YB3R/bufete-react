@@ -1,7 +1,9 @@
 import { Typography } from "@material-tailwind/react";
 import { Carousel } from "./carousel/Carousel";
-import { Header } from "./header";
-import { criteria, services, slides } from "../hooks/useArraysHome";
+import { Header } from "./header/Header";
+import { cases, criteria, services, slides } from "../hooks/useArraysHome";
+
+import carousel1 from "./../assets/img/carrusel1.jpg";
 
 export const Home = () => {
   return (
@@ -93,6 +95,22 @@ export const Home = () => {
         <Typography as="h1" className="uppercase font-700 text-3xl sm:text-4xl text-center">
           Casos Prácticos
         </Typography>
+
+        <article className="grid sm:w-4/6 sm:mx-auto md:w-full md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 px-4 mt-10">
+          {cases.map((c) => (
+            <a href="#" className="h-96 relative hover:opacity-90 transition-all practical-cases">
+              <img src={c.image} alt="" className="h-full w-full object-cover" />
+              <div className="shadow absolute top-0 w-full h-full px-8 flex flex-col justify-center">
+                <Typography as="h2" className="uppercase text-white text-2xl font-500">
+                  {c.name}
+                </Typography>
+                <Typography as="p" className="uppercase mt-4 font-500 text-white">
+                  Ver Ahora
+                </Typography>
+              </div>
+            </a>
+          ))}
+        </article>
       </section>
     </>
   );
