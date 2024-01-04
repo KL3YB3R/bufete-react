@@ -3,6 +3,7 @@ import iconBlue from "./../../assets/img/logo-blue.png";
 import iconMenu from "./../../assets/icons/menu.png";
 import iconClose from "./../../assets/icons/cerrar.png";
 import { useHeaderOptions } from "../../hooks/useHeaderOptions";
+import { Link } from "react-router-dom";
 
 export const Header = ({ color }) => {
   const [
@@ -41,17 +42,16 @@ export const Header = ({ color }) => {
         }`}
       >
         <Typography as="li" className="text-black h-full flex items-center">
-          <a
-            href="#"
+          <Link
+            to="services"
             className="px-4 py-3 md:px-3 md:py-5 lg:p-5 text-sm font-300 w-full transition-all duration-150 md:border-b-3 hover:text-white hover:bg-blue md:hover:text-black md:border-b-white md:hover:border-b-blue md:hover:bg-blue-gray-50"
           >
             ¿Quiénes somos?
-          </a>
+          </Link>
         </Typography>
         <Typography as="li" className="text-black h-max flex flex-col md:flex-row items-center relative">
-          <a
-            href="#"
-            className={`p-4 py-3 md:px-3 md:py-5 lg:p-5 text-sm w-full font-300 transition-all duration-150 md:border-b-3 hover:text-white hover:bg-blue md:hover:text-black md:border-b-white md:hover:border-b-blue md:hover:bg-blue-gray-50 ${
+          <button
+            className={`p-4 py-3 md:px-3 md:py-5 lg:p-5 text-sm text-start w-full font-300 transition-all duration-150 md:border-b-3 hover:text-white hover:bg-blue md:hover:text-black md:border-b-white md:hover:border-b-blue md:hover:bg-blue-gray-50 ${
               subOption || showOrHide
                 ? "bg-blue text-white md:bg-white md:text-black md:hover:border-b-blue md:hover:bg-blue-gray-50"
                 : ""
@@ -61,7 +61,7 @@ export const Header = ({ color }) => {
             onTouchStart={() => showOrHideOption()}
           >
             Servicios
-          </a>
+          </button>
           <ul
             className={`static z-10 p-0 md:p-2 flex-col w-full md:absolute md:top-14 md:w-52 md:bg-white md:rounded-md md:shadow-md ${
               subOption || showOrHide ? "flex" : "hidden"
@@ -70,62 +70,62 @@ export const Header = ({ color }) => {
             onMouseOut={() => hideSubOption()}
           >
             <Typography as="li" className="p-0 w-full flex">
-              <a
-                href="#"
+              <Link
+                to="services"
                 className="text-sm ps-5 py-2 md:py-1 md:px-2 w-full font-300 rounded-md transition-all duration-150 hover:bg-gray-200"
               >
                 Consultoria Empresarial
-              </a>
+              </Link>
             </Typography>
             <Typography as="li" className="p-0 w-full flex">
-              <a
-                href="#"
+              <Link
+                to="services"
                 className="text-sm ps-5 py-2 md:py-1 md:px-2 w-full font-300 rounded-md transition-all duration-150 hover:bg-gray-200"
               >
                 Abogados Expertos
-              </a>
+              </Link>
             </Typography>
             <Typography as="li" className="p-0 w-full flex">
-              <a
-                href="#"
+              <Link
+                to="services"
                 className="text-sm ps-5 py-2 md:py-1 md:px-2 w-full font-300 rounded-md transition-all duration-150 hover:bg-gray-200"
               >
                 Asesoria Profesional
-              </a>
+              </Link>
             </Typography>
           </ul>
         </Typography>
         <Typography as="li" className="text-black h-full flex items-center">
-          <a
-            href="#"
+          <Link
+            to="services"
             className="p-4 md:px-3 md:py-5 lg:p-5 text-sm w-full font-300 transition-all duration-150 md:border-b-3 hover:text-white hover:bg-blue md:hover:text-black md:border-b-white md:hover:border-b-blue md:hover:bg-blue-gray-50"
           >
             Criterios
-          </a>
+          </Link>
         </Typography>
         <Typography as="li" className="text-black h-full flex items-center">
-          <a
-            href="#"
+          <Link
+            to="services"
             className="p-4 md:px-3 md:py-5 lg:p-5 text-sm w-full font-300 transition-all duration-150 md:border-b-3 hover:text-white hover:bg-blue md:hover:text-black md:border-b-white md:hover:border-b-blue md:hover:bg-blue-gray-50"
           >
             Novedades
-          </a>
+          </Link>
         </Typography>
         <Typography as="li" className="text-black h-full flex items-center">
-          <a
-            href="#"
+          <Link
+            to="services"
             className="p-4 md:px-3 md:py-5 lg:p-5 text-sm w-full font-300 transition-all duration-150 md:border-b-3 hover:text-white hover:bg-blue md:hover:text-black md:border-b-white md:hover:border-b-blue md:hover:bg-blue-gray-50"
           >
             Únetenos
-          </a>
+          </Link>
         </Typography>
         <Typography as="li" className="text-black h-full flex items-center">
-          <a
-            href="#"
+          <Link
+            to="services"
             className="p-4 md:px-3 md:py-5 lg:p-5 text-sm w-full font-300 transition-all duration-150 md:border-b-3 hover:text-white hover:bg-blue md:hover:text-black md:border-b-white md:hover:border-b-blue md:hover:bg-blue-gray-50"
           >
             Contáctanos
-          </a>
+          </Link>
         </Typography>
       </ul>
     </Navbar>

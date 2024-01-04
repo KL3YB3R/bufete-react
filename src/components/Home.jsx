@@ -3,8 +3,6 @@ import { Carousel } from "./carousel/Carousel";
 import { Header } from "./header/Header";
 import { cases, criteria, services, slides } from "../hooks/useArraysHome";
 
-import carousel1 from "./../assets/img/carrusel1.jpg";
-
 export const Home = () => {
   return (
     <>
@@ -39,8 +37,12 @@ export const Home = () => {
         </Typography>
 
         <article className="grid w-12/12 sm:w-9/12 md:w-11/12 grid-cols-1 mx-auto md:grid-cols-2 xl:grid-cols-3 gap-5 items-center mt-10 md:p-5">
-          {services.map((service) => (
-            <a href="#" className="h-60 shadow-3xl rounded-xl hover:scale-105 transition-all relative home-services">
+          {services.map((service, i) => (
+            <a
+              href="#"
+              key={i}
+              className="h-60 shadow-3xl rounded-xl hover:scale-105 transition-all relative home-services"
+            >
               <img src={service.image} alt="" className="w-full h-full object-cover rounded-xl" />
               <div className="h-full w-full absolute top-0 z-50 text-services-container">
                 <div className="h-full w-full flex flex-col justify-end rounded-xl bg-gradient-to-r from-blueWhite to-transparent p-4">
@@ -64,8 +66,8 @@ export const Home = () => {
         </Typography>
 
         <article className="grid sm:w-4/6 sm:mx-auto md:w-full md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 px-0 sm:px-5 py-10 gap-3">
-          {criteria.map((crit) => (
-            <aside class="shadow-xl bg-white rounded-lg">
+          {criteria.map((crit, i) => (
+            <aside key={i} className="shadow-xl bg-white rounded-lg">
               <a href="#">
                 <img
                   src={crit.image}
@@ -97,8 +99,8 @@ export const Home = () => {
         </Typography>
 
         <article className="grid sm:w-4/6 sm:mx-auto md:w-full md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 px-4 mt-10">
-          {cases.map((c) => (
-            <a href="#" className="h-96 relative hover:opacity-90 transition-all practical-cases">
+          {cases.map((c, i) => (
+            <a href="#" key={i} className="h-96 relative hover:opacity-90 transition-all practical-cases">
               <img src={c.image} alt="" className="h-full w-full object-cover" />
               <div className="shadow absolute top-0 w-full h-full px-8 flex flex-col justify-center">
                 <Typography as="h2" className="uppercase text-white text-2xl font-500">
