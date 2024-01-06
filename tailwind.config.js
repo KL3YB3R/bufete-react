@@ -22,12 +22,15 @@ module.exports = withMT({
         blueWhite: "#117c8f",
         blue: "#07575b",
         blueDark: "#003b46",
+        orange: "#ba5536",
+        orangeWhite: "#fb7248",
       },
       width: {
         128: "32rem",
       },
       height: {
         100: "28rem",
+        102: "30rem",
         104: "32rem",
         128: "36rem",
       },

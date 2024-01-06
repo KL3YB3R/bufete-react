@@ -5,9 +5,8 @@ import { cases, criteria, services, slides } from "../hooks/useArraysHome";
 
 export const Home = () => {
   return (
-    <>
+    <main className="p-0 opacity-100 transition-all duration-300" id="home">
       {/* SECTIONS FROM HOME */}
-      <Header color="blue" />
       <Carousel slides={slides} />
 
       {/* ABOUT US */}
@@ -17,7 +16,7 @@ export const Home = () => {
         </Typography>
         <Typography
           as="p"
-          className="lg:w-12/12 xl:w-5/6 mx-auto text-center mt-10 text-lg sm:text-xl font-300 sm:leading-9"
+          className="lg:w-12/12 xl:w-5/6 mx-auto text-center mt-10 text-lg sm:text-xl font-400 sm:leading-9"
         >
           Somos un equipo multidisciplinario de profesionales, que en uso del ordenamiento jurídico y atención a casos
           particulares de la vida social, defiende y representa los derechos e intereses de nuestros clientes.
@@ -25,7 +24,7 @@ export const Home = () => {
           retos en la construcción de negocios exitosos como oportunidad de crecimiento personal y empresarial.
         </Typography>
 
-        <button className="mt-10 capitalize w-fit mx-auto border-2 border-blue bg-white text-dark font-300 text-md rounded-lg py-2 px-8 transition-all duration-700 button-more-info">
+        <button className="mt-10 capitalize w-fit mx-auto border-2 border-blue bg-white text-dark font-400 text-md rounded-lg py-2 px-8 transition-all duration-700 button-more-info">
           Más Información
         </button>
       </section>
@@ -49,9 +48,9 @@ export const Home = () => {
                   <Typography as="h4" className="uppercase font-bold text-white text-xl">
                     {service.name}
                   </Typography>
-                  <a href="#" className="uppercase font-bold text-white text-sm mt-3 underline">
+                  <p href="#" className="uppercase font-bold text-white text-sm mt-3 underline">
                     Conocer más
-                  </a>
+                  </p>
                 </div>
               </div>
             </a>
@@ -81,7 +80,7 @@ export const Home = () => {
               <Typography as="h5" className="font-600 text-lg pt-3 px-6">
                 {crit.sentence}
               </Typography>
-              <Typography as="p" className="font-300 text-justify text-md pt-4 pb-5 px-6">
+              <Typography as="p" className="font-400 text-justify text-md pt-4 pb-5 px-6">
                 {crit.context}
               </Typography>
             </aside>
@@ -114,6 +113,6 @@ export const Home = () => {
           ))}
         </article>
       </section>
-    </>
+    </main>
   );
 };

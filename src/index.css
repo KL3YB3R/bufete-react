@@ -106,15 +106,19 @@ body {
   animation: showText 0.3s forwards;
 }
 
-/* 
+/* ! SERVICES */
 
-.home-services:hover .text-services-container {
-  animation-delay: 0s;
+.service-option > aside:hover {
   cursor: pointer;
 }
 
+.service-option > aside:hover > .uppercase::after {
+  animation: borde 0.5s forwards;
+}
 
-*/
+.service-option > aside:hover > .uppercase {
+  color: #ba5536;
+}
 
 /* ! KEYFRAMES */
 
@@ -125,5 +129,32 @@ body {
   100% {
     opacity: 1;
     margin-left: 0%;
+  }
+}
+
+@keyframes borde {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes appear-left {
+  0% {
+    margin-left: -60%;
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+    margin-left: -30%;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    margin-left: 0;
   }
 }
