@@ -16,3 +16,8 @@ V 0.2 =>
 - Página de servicios.
 - Ajuste de colores de acuerdo con la página que se seleccione.
 - Mejoras de animaciones.
+
+V 0.3 =>
+
+- Implementación de react router.
+- Inicios de la página de subservicios.

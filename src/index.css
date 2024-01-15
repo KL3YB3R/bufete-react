@@ -108,16 +108,30 @@ body {
 
 /* ! SERVICES */
 
-.service-option > aside:hover {
+.service-option > a:hover {
   cursor: pointer;
 }
 
-.service-option > aside:hover > .uppercase::after {
+.service-option > a:hover > .uppercase::after {
   animation: borde 0.5s forwards;
 }
 
-.service-option > aside:hover > .uppercase {
+.service-option > a:hover > .uppercase {
   color: #ba5536;
+}
+
+/* ! SUBSERVICES */
+.title-subservice {
+  line-height: 55px;
+}
+
+.button-back-menu > img {
+  margin-right: 0.5rem;
+}
+
+.button-back-menu:hover > img {
+  margin-left: -0.3rem;
+  margin-right: 0.8rem;
 }
 
 /* ! KEYFRAMES */

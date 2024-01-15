@@ -1,11 +1,13 @@
 import { Typography } from "@material-tailwind/react";
 import { Carousel } from "./carousel/Carousel";
 import { Header } from "./header/Header";
-import { cases, criteria, services, slides } from "../hooks/useArraysHome";
+import { cases, criteria, services, slides } from "../hooks";
 
-export const Home = () => {
+export const Home = ({ color }) => {
   return (
-    <main className="p-0 opacity-100 transition-all duration-300" id="home">
+    <>
+      <Header color={color} />
+
       {/* SECTIONS FROM HOME */}
       <Carousel slides={slides} />
 
@@ -113,6 +115,6 @@ export const Home = () => {
           ))}
         </article>
       </section>
-    </main>
+    </>
   );
 };

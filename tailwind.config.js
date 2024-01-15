@@ -13,6 +13,7 @@ module.exports = withMT({
       backgroundImage: {
         logoBlue: "url('/src/assets/img/logo-blue.png')",
         logoOrange: "url('/src/assets/img/logo-orange.png')",
+        arrowWhite: "url('/src/assets/icons/arrow-white.png')",
       },
       borderWidth: {
         1: "1px",
@@ -26,6 +27,7 @@ module.exports = withMT({
         orangeWhite: "#fb7248",
       },
       width: {
+        "11.5/12": "95%",
         128: "32rem",
       },
       height: {
@@ -39,6 +41,15 @@ module.exports = withMT({
       },
       boxShadow: {
         "3xl": "-4px 0px 10px 0px rgba(0, 0, 0, 0.5);",
+      },
+      borderRadius: {
+        800: "800px",
+      },
+      fontSize: {
+        15: "15px",
+      },
+      spacing: {
+        18: "70px",
       },
     },
   },
