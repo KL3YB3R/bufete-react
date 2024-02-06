@@ -18,13 +18,17 @@ module.exports = withMT({
       borderWidth: {
         1: "1px",
         3: "3px",
+        50: "50px",
+        100: "100px",
       },
       colors: {
         blueWhite: "#117c8f",
         blue: "#07575b",
         blueDark: "#003b46",
+        bgOrange: "#ffe4db",
         orange: "#ba5536",
         orangeWhite: "#fb7248",
+        otherOrangeWhite: "#e04314",
       },
       width: {
         "11.5/12": "95%",
@@ -50,6 +54,10 @@ module.exports = withMT({
       },
       spacing: {
         18: "70px",
+        26: "104px",
+      },
+      rotate: {
+        60: "60deg",
       },
     },
   },

@@ -21,3 +21,19 @@ V 0.3 =>
 
 - Implementación de react router.
 - Inicios de la página de subservicios.
+
+V 0.4 =>
+
+- Inicio de pagina subservicios
+
+  - Implementación de componentes
+
+V 0.4.1 =>
+
+- Se terminaron de desarrollar los servicios de consultoria empresarial.
+- Se implementaron nuevos diseños y un nuevo manejo de los componentes para mostrar los subservicios.
+
+  Para la nueva actualizacion: Estimado Viernes 9 de Febrero
+
+  - Culminacion de servicios de Abogados Expertos.
+  - Desarrollo de servicios de Asesoria Profesional.

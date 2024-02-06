@@ -26,7 +26,7 @@ export const Header = ({ color }) => {
   color === "blue" ? (icon = iconBlue) : (icon = iconOrange);
 
   return (
-    <Navbar className="px-5 py-0 rounded-none sticky top-0 flex justify-between items-center h-20 relative z-50 bg-white w-screen max-w-none">
+    <Navbar className="px-2 lg:px-5 py-0 rounded-none sticky top-0 flex justify-between items-center h-20 relative z-50 bg-white md:bg-white w-screen max-w-none">
       <Link
         to="/"
         className="button-home flex items-center w-24 h-full bg-transparent shadow-none p-3 hover:bg-transparent hover:opacity-100 hover:shadow-none"
@@ -45,7 +45,7 @@ export const Header = ({ color }) => {
       </Button>
 
       <ul
-        className={`options-container h-max lg:h-full p-0 justify-end items-center absolute top-20 z-50 left-0 w-full bg-white md:bg-transparent md:static md:flex ${
+        className={`options-container h-max lg:h-full p-0 justify-end items-center absolute top-20 z-50 left-0 w-full bg-white md:bg-white md:static md:flex ${
           showMobileMenu ? "animate-showOption" : "hidden"
         }`}
       >

@@ -28,6 +28,11 @@
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .font-100 {
@@ -134,8 +139,62 @@ body {
   margin-right: 0.8rem;
 }
 
-/* ! KEYFRAMES */
+/* ! SECTIONS => BUTTONS */
+.buttons-microservices:hover > span {
+  transform: scale(1.05);
+}
 
+.inactive {
+  transform: scale(0.9);
+}
+
+.inactive.orange {
+  border-top-color: #ba5536;
+}
+
+.inactive.blue {
+  border-top-color: #003b46;
+}
+
+.inactive.opacity {
+  opacity: 0.5;
+}
+
+.active {
+  transform: scale(1.05);
+}
+
+.active.orange {
+  border-bottom-color: #ba5536;
+}
+
+.active.blue {
+  border-bottom-color: #003b46;
+}
+
+.animation-appear-top {
+  /* animation: appear-top 0.5s forwards; */
+}
+
+.animation-appear-top {
+  animation: appear-top-button 0.5s forwards;
+}
+
+/* ! SECTION = CARDS */
+
+.list-container {
+  height: 0;
+  padding: 0;
+  opacity: 0;
+}
+
+.list-container.active {
+  padding: 0rem 0.6rem;
+  height: 100%;
+  opacity: 1;
+}
+
+/* ! KEYFRAMES */
 @keyframes showText {
   60% {
     opacity: 0;
@@ -152,6 +211,42 @@ body {
   }
   100% {
     width: 100%;
+  }
+}
+
+@keyframes appear-top-button {
+  0% {
+    margin-left: -60%;
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+    margin-left: -30%;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    margin-left: 0%;
+  }
+}
+
+@keyframes appear-top {
+  0% {
+    margin-top: -60%;
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+    margin-top: -30%;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0;
   }
 }
 

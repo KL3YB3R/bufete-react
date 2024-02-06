@@ -39,7 +39,7 @@ export const useArrayServices = () => {
     },
     {
       title: "CONSTITUCIÓN DE PYMES",
-      url: "constitucion-pymes",
+      url: "constitucionPymes",
       description:
         "Te acompañaremos desde la creación de tu propio negocio hasta el asesoramiento de cada uno de sus procesos administrativos, etc.",
     },
@@ -63,43 +63,43 @@ export const useArrayServices = () => {
     },
     {
       title: "Cambio de Domicilio",
-      url: "cambio-domicilio",
+      url: "cambioDomicilio",
       description:
         "El domicilio de la empresa es el lugar donde lleva a cabo sus procesos administrativos, así como su actividad comercial y mercantil.",
     },
     {
       title: "Aumento de Capital",
-      url: "aumento-capital",
+      url: "aumentoCapital",
       description:
         "El aumento del capital social ha de acordarse en asamblea general o de socios, con los requisitos previstos para la modificación de los estatutos.",
     },
     {
       title: "Venta de Acciones",
-      url: "venta-acciones",
+      url: "ventaAcciones",
       description:
         "Las acciones se constituyen como las partes en las que se divide el capital de una empresa. Cada inversor de la empresa posee un número determinado de acciones.",
     },
     {
       title: "Fusión de Empresas",
-      url: "fusion-empresas",
+      url: "fusionEmpresas",
       description:
         "Ocurre cuando dos o más organizaciones independientes deciden unir sus activos y pasivos para formar una nueva entidad.",
     },
     {
       title: "Apertura en Sucursal extranjera",
-      url: "apertura-sucursal-extranjera",
+      url: "aperturaSucursalExtranjera",
       description:
         "Es una organización que pertenece a una sociedad registrada en un país foráneo, es decir, que no constituye una persona jurídica distinta a la sociedad de origen.",
     },
     {
       title: "Outsourcing RRHH",
-      url: "outsourcing-rrhh",
+      url: "outsourcingRRHH",
       description:
         "Contamos con experiencia y conocimiento en áreas como cálculo de nómina, formación y otros procesos relacionados al Departamento de Recursos Humanos.",
     },
     {
       title: "Auditoría de Costos Laborales",
-      url: "auditoria-costos-laborales",
+      url: "auditoriaCostosLaborales",
       description:
         "Comprende la validación de los pagos laborales hacia el personal para que estén debidamente direccionados a los asientos contables correspondientes.",
     },
@@ -108,7 +108,7 @@ export const useArrayServices = () => {
   const subservicesAbogados = [
     {
       title: "Redacciones de Derecho Civil",
-      url: "redacciones-derecho-civil",
+      url: "redaccionesDerechoCivil",
       description:
         "En el devenir y vertiginoso desarrollo del Derecho en sus diferentes especialidades, es necesaria la actualización permanente de las herramientas encargadas de su aplicación.",
     },
