@@ -22,6 +22,15 @@ export const ImageLeftWBg = ({ content }) => {
         ) : (
           ""
         )}
+        {content.firstText3 ? (
+          <Typography as="p" className="font-400 text-lg leading-8 mt-3">
+            {content.firstText3} <b className="font-600">{content?.firstTextBlack3}</b> {content?.secondText3}{" "}
+            <b className="font-600">{content?.secondTextBlack3}</b> {content?.thirdText3}{" "}
+            <b className="font-600">{content?.thirdTextBlack3}</b>
+          </Typography>
+        ) : (
+          ""
+        )}
         {/* // ! LIST SECTION */}
         {content.list ? <Lists content={content} /> : ""}
       </article>

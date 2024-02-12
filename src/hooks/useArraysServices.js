@@ -120,55 +120,55 @@ export const useArrayServices = () => {
     },
     {
       title: "Constitución de Consorcio",
-      url: "constitucion-consorcio",
+      url: "constitucionConsorcios",
       description:
         "En nuestro país, los consorcios son uniones o agrupaciones de empresas, que se realizan entre quienes ejecutan un proceso productivo atendiendo a un fin económico común.",
     },
     {
       title: "Título Supletorio",
-      url: "titulo-supletorio",
+      url: "tituloSupletorio",
       description:
         "Este título cubre solo las llamadas bienhechurías, que son las construcciones que se hagan sobre el terreno, dicho título será otorgado por el Tribunal competente donde está ubicada la bienhechuría.",
     },
     {
       title: "Interdicto de Amparo Restitutorio de la posesión",
-      url: "interdicto-amparo-restitutorio",
+      url: "interdictoAmparoRestitutorio",
       description:
         "La finalidad de nuestro acompañamiento, es evitar que como poseedor del inmueble seas molestado en el ejercicio de tu derecho.",
     },
     {
       title: "Acción reivindicatoria de la propiedad",
-      url: "accion-reivindicatoria",
+      url: "accionReivindicatoria",
       description:
         "Esta acción judicial se intenta por el Procedimiento Civil Ordinario, con fundamento en el artículo 548 del Código Civil venezolano vigente.",
     },
     {
       title: "Prescripción Adquisitiva",
-      url: "prescripcion-adquisitiva",
+      url: "prescripcionAdquisitiva",
       description:
         "Es el modo de adquirir el dominio y otros derechos reales por la posesión a título de dueño durante el tiempo regido por la Ley, regulada en el artículo 1.952 del Código Civil venezolano.",
     },
     {
       title: "Registro Inmobiliario",
-      url: "registro-inmobiliario",
+      url: "registroInmobiliario",
       description:
         "Nos encargamos de todos los trámites para registrar tu inmueble, ya que si no realizas este proceso no eres propietario del mismo, aunque hayas pagado la totalidad del precio y tengas la posesión.",
     },
     {
       title: "Contrato Compraventa",
-      url: "contrato-compraventa",
+      url: "contratoCompraventa",
       description:
         "Cuando el vendedor se obliga a transferir la propiedad de una cosa y el comprador a pagar el precio, estamos ante un contrato de compraventa.",
     },
     {
       title: "Poder especial y general",
-      url: "poder-especial",
+      url: "poderEspecialGeneral",
       description:
         "Tramitamos el Poder Especial o General, entendiendo por “Poder” aquello que indica el artículo 1.684 del Código Civil venezolano vigente.",
     },
     {
       title: "Gestión de Cobranza",
-      url: "gestion-cobranza",
+      url: "gestionCobranza",
       description:
         "Contamos con especialistas en el área de crédito y cobranza, tanto judiciales como extrajudiciales, de manera de documentar de la mejor forma a tu empresa o emprendimiento sobre esa acreencia.",
     },
@@ -177,19 +177,19 @@ export const useArrayServices = () => {
   const subservicesAseroria = [
     {
       title: "Auditoría de Cuentas",
-      url: "auditoria-cuentas",
+      url: "auditoriaCuentas",
       description:
         "Aportamos a las empresas una información financiera útil y fiable, más allá de los requerimientos legales a través de la revisión y verificación de las cuentas anuales, así como de otros estados financieros o documentos contables.",
     },
     {
       title: "Asesoría Laboral",
-      url: "asesoria-laboral",
+      url: "asesoriaLaboral",
       description:
         "Brindamos asesoría en derecho laboral, seguridad social y gestiones laborales administrativas, tanto a empresas como a trabajadores.",
     },
     {
       title: "Asesoría Financiera y Contable",
-      url: "asesoria-financiera",
+      url: "asesoriaFinanciera",
       description:
         "Nos ocupamos de todos los actos financieros y contables relacionados a las sociedades, desde lo relativo a su constitución hasta las tareas de liquidación de las mismas, haciendo referencia a su parte económica y financiera.",
     },

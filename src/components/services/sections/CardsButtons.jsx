@@ -25,8 +25,8 @@ export const CardsButtons = ({ content }) => {
         <Typography as="h5" className="w-11/12 font-600 text-left uppercase pointer-events-none">
           {content.mainText}
         </Typography>
-        <span className="w-4 text-xl text-center items-center transition-all duration-200">
-          <img src={arrowWhite} alt="" className="w-full" />
+        <span className="w-4 text-xl text-center items-center">
+          <img src={arrowWhite} alt="" className="w-full transition-all duration-200" />
         </span>
       </button>
       <ul className={`w-full h-max list-container transition-all hidden duration-300 ${marginList}`}>

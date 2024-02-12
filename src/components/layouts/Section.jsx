@@ -1,4 +1,6 @@
-import { CardsButtons } from "../services/sections";
+import { Typography } from "@material-tailwind/react";
+import { CardsButtons, CardsHide, Lists, TextWithoutImage } from "../services/sections";
+import { OnlyText } from "../services/sections/OnlyText";
 
 export const Section = ({ content }) => {
   return (
@@ -16,6 +18,56 @@ export const Section = ({ content }) => {
       ) : (
         ""
       )}
+
+      {content.onlyText ? <OnlyText content={content.onlyText} mb="8" /> : ""}
+      {content.firstTitle ? (
+        <Typography as="h6" className="font-600 text-lg w-10/12 mx-auto mb-0">
+          {content.firstTitle}
+        </Typography>
+      ) : (
+        ""
+      )}
+      {content.onlyText2 ? <OnlyText content={content.onlyText2} mt="8" mb="8" /> : ""}
+      {content.list ? (
+        <Lists
+          content={content}
+          mt="2"
+          mb="3"
+          width="10/12"
+          listType={content.listType.style}
+          font={content.listType.font}
+          textSize={content.listType.size}
+        />
+      ) : (
+        ""
+      )}
+
+      {content.cardsHide ? <CardsHide content={content.cardsHide} cols="3" mt="12" xl="12/12" /> : ""}
+      {content.secondTitle ? (
+        <Typography as="h6" className="font-600 text-lg w-10/12 mx-auto mt-6 mb-0">
+          {content.secondTitle}
+        </Typography>
+      ) : (
+        ""
+      )}
+      {content.onlyText3 ? <OnlyText content={content.onlyText3} mt="8" mb="3" /> : ""}
+      {content.list2 ? (
+        <Lists
+          content={content}
+          mt="10"
+          mb="3"
+          width="10/12"
+          listType={content.listType2.style}
+          font={content.listType2.font}
+          textSize={content.listType2.size}
+          listArray="list2"
+        />
+      ) : (
+        ""
+      )}
+      {content.onlyText4 ? <OnlyText content={content.onlyText4} mt="0" mb="8" /> : ""}
+      {content.onlyText5 ? <OnlyText content={content.onlyText5} mt="0" mb="8" /> : ""}
+      {content.onlyText6 ? <OnlyText content={content.onlyText6} mt="0" mb="8" /> : ""}
     </article>
   );
 };

@@ -27,6 +27,7 @@ module.exports = withMT({
         blueDark: "#003b46",
         bgOrange: "#ffe4db",
         orange: "#ba5536",
+        orangeText: "#a43820",
         orangeWhite: "#fb7248",
         otherOrangeWhite: "#e04314",
       },
@@ -58,6 +59,9 @@ module.exports = withMT({
       },
       rotate: {
         60: "60deg",
+      },
+      listStyleType: {
+        circle: "circle",
       },
     },
   },

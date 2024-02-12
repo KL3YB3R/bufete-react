@@ -15,22 +15,45 @@ import {
   VentaAcciones,
 } from "./subservices/consultoria";
 import {
+  AccionReivindicatoria,
+  ConstitucionConsorcios,
+  ContratoCompraVenta,
+  Contratos,
+  GestionCobranza,
+  InterdictoAmparo,
+  PoderEspecialGeneral,
+  PrescripcionAdquisitiva,
+  RedaccionesDerechoCivil,
+  RegistroInmobiliario,
+  TitulosSupletorio,
+} from "./subservices/abogados";
+import { AsesoriaFinanciera, AsesoriaLaboral, AuditoriaCuentas } from "./subservices/asesoria";
+import {
+  URLaccionReivindicatoria,
   URLaperturaSucursalExtranjera,
   URLauditoriaCostosLaborales,
   URLaumentoCapital,
   URLcambioDomicilio,
+  URLconsorcios,
   URLconstitucionEmpresas,
   URLconstitucionPymes,
+  URLcontratoCompraVenta,
   URLcontratos,
   URLempresas,
   URLestatutos,
   URLfusionEmpresas,
+  URLgestionCobranza,
+  URLinterdictoAmparoRestitutorio,
   URLoutsourcingRRHH,
   URLplanes,
+  URLpoderEspecialGeneral,
+  URLprescripcionAdquisitiva,
   URLredaccionesDerechoCivil,
+  URLregistroInmmobiliario,
+  URLtituloSupletorio,
   URLventaAcciones,
 } from "../../helpers/subservicesObjects";
-import { Contratos, RedaccionesDerechoCivil } from "./subservices/abogados";
+import { URLasesoriaFinanciera, URLasesoriaLaboral, URLauditoriaCuentas } from "../../helpers/asesoriaObjects";
 
 export const ServicesContent = ({ color }) => {
   const params = useParams();
@@ -67,6 +90,28 @@ export const ServicesContent = ({ color }) => {
         ""
       )}
       {params.id === "contratos" ? <Contratos subservice={URLcontratos} /> : ""}
+      {params.id === "constitucionConsorcios" ? <ConstitucionConsorcios subservice={URLconsorcios} /> : ""}
+      {params.id === "tituloSupletorio" ? <TitulosSupletorio subservice={URLtituloSupletorio} /> : ""}
+      {params.id === "interdictoAmparoRestitutorio" ? (
+        <InterdictoAmparo subservice={URLinterdictoAmparoRestitutorio} />
+      ) : (
+        ""
+      )}
+      {params.id === "accionReivindicatoria" ? <AccionReivindicatoria subservice={URLaccionReivindicatoria} /> : ""}
+      {params.id === "prescripcionAdquisitiva" ? (
+        <PrescripcionAdquisitiva subservice={URLprescripcionAdquisitiva} />
+      ) : (
+        ""
+      )}
+      {params.id === "registroInmobiliario" ? <RegistroInmobiliario subservice={URLregistroInmmobiliario} /> : ""}
+      {params.id === "contratoCompraventa" ? <ContratoCompraVenta subservice={URLcontratoCompraVenta} /> : ""}
+      {params.id === "poderEspecialGeneral" ? <PoderEspecialGeneral subservice={URLpoderEspecialGeneral} /> : ""}
+      {params.id === "gestionCobranza" ? <GestionCobranza subservice={URLgestionCobranza} /> : ""}
+
+      {/* // ! ASESORIA PROFESIONAL */}
+      {params.id === "auditoriaCuentas" ? <AuditoriaCuentas subservice={URLauditoriaCuentas} /> : ""}
+      {params.id === "asesoriaLaboral" ? <AsesoriaLaboral subservice={URLasesoriaLaboral} /> : ""}
+      {params.id === "asesoriaFinanciera" ? <AsesoriaFinanciera subservice={URLasesoriaFinanciera} /> : ""}
     </>
   );
 };
