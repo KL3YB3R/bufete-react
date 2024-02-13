@@ -1,10 +1,10 @@
 import { Navbar, MobileNav, Typography, Button, IconButton } from "@material-tailwind/react";
-import iconBlue from "./../../assets/img/logo-blue.png";
-import iconOrange from "./../../assets/img/logo-orange.png";
-import iconMenu from "./../../assets/icons/menu.png";
-import iconClose from "./../../assets/icons/cerrar.png";
-import { useHeaderOptions } from "../../hooks";
-import "./../../helpers/navigation";
+import iconBlue from "./../assets/img/logo-blue.png";
+import iconOrange from "./../assets/img/logo-orange.png";
+import iconMenu from "./../assets/icons/menu.png";
+import iconClose from "./../assets/icons/cerrar.png";
+import { useHeaderOptions } from "../hooks";
+import "../helpers/navigation";
 import { Link } from "react-router-dom";
 
 export const Header = ({ color }) => {

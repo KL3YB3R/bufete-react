@@ -1,11 +1,10 @@
 import { Typography } from "@material-tailwind/react";
-import { Header } from "./header/Header";
-import { useState } from "react";
-import { D, W } from "./../utils/variables";
+import { Header } from "./Header";
 import "./../helpers/serviceOption";
 import { ServicesItems } from "./services/ServicesItems";
 import { useArrayServices } from "../hooks";
 import { Link } from "react-router-dom";
+import { Footer } from "./Footer";
 
 export const Services = ({ color }) => {
   const [
@@ -102,6 +101,8 @@ export const Services = ({ color }) => {
           ))}
         </article>
       </section>
+
+      <Footer color={color} />
     </>
   );
 };

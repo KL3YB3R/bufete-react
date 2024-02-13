@@ -1,7 +1,8 @@
 import { Typography } from "@material-tailwind/react";
 import { Carousel } from "./carousel/Carousel";
-import { Header } from "./header/Header";
+import { Header } from "./Header";
 import { cases, criteria, services, slides } from "../hooks";
+import { Footer } from "./Footer";
 
 export const Home = ({ color }) => {
   return (
@@ -115,6 +116,8 @@ export const Home = ({ color }) => {
           ))}
         </article>
       </section>
+
+      <Footer color={color} />
     </>
   );
 };

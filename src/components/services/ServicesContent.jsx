@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import { Header } from "../header/Header";
+import { Header } from "../Header";
 import {
   AperturaSucursalExtranjera,
   AuditoriaCostosLaborales,

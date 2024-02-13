@@ -46,6 +46,7 @@ module.exports = withMT({
       },
       boxShadow: {
         "3xl": "-4px 0px 10px 0px rgba(0, 0, 0, 0.5);",
+        footer: "0px -1px 8px rgba(0, 0, 0, 0.25);",
       },
       borderRadius: {
         800: "800px",
