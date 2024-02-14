@@ -14,12 +14,15 @@ export const Home = ({ color }) => {
 
       {/* ABOUT US */}
       <section className="flex flex-col py-20 px-14 md:p-20 lg:p-36 bg-gray-50">
-        <Typography as="h1" className="uppercase font-700 text-3xl sm:text-4xl text-center">
+        <Typography
+          as="h1"
+          className="uppercase font-700 text-3xl sm:text-4xl text-center animate__animated title-section"
+        >
           ¿Quiénes Somos?
         </Typography>
         <Typography
           as="p"
-          className="lg:w-12/12 xl:w-5/6 mx-auto text-center mt-10 text-lg sm:text-xl font-400 sm:leading-9"
+          className="lg:w-12/12 xl:w-5/6 mx-auto text-center mt-10 text-lg sm:text-xl font-400 sm:leading-9 animate__animated text-about"
         >
           Somos un equipo multidisciplinario de profesionales, que en uso del ordenamiento jurídico y atención a casos
           particulares de la vida social, defiende y representa los derechos e intereses de nuestros clientes.
@@ -27,14 +30,17 @@ export const Home = ({ color }) => {
           retos en la construcción de negocios exitosos como oportunidad de crecimiento personal y empresarial.
         </Typography>
 
-        <button className="mt-10 capitalize w-fit mx-auto border-2 border-blue bg-white text-dark font-400 text-md rounded-lg py-2 px-8 transition-all duration-700 button-more-info">
+        <button className="mt-10 capitalize w-fit mx-auto border-2 border-blue bg-white text-dark font-400 text-md rounded-lg py-2 px-8 transition-all duration-700 animate__animated button-section button-more-info">
           Más Información
         </button>
       </section>
 
       {/* OFFER YOU */}
       <section className="flex flex-col p-10 sm:p-20 sm:px-4 bg-white">
-        <Typography as="h1" className="uppercase font-700 text-3xl sm:text-4xl text-center">
+        <Typography
+          as="h1"
+          className="uppercase font-700 text-3xl sm:text-4xl text-center animate__animated title-section"
+        >
           Te Ofrecemos
         </Typography>
 
@@ -43,7 +49,7 @@ export const Home = ({ color }) => {
             <a
               href="#"
               key={i}
-              className="h-60 shadow-3xl rounded-xl hover:scale-105 transition-all relative home-services"
+              className="h-60 shadow-3xl rounded-xl hover:scale-105 transition-all relative animate__animated home-services"
             >
               <img src={service.image} alt="" className="w-full h-full object-cover rounded-xl" />
               <div className="h-full w-full absolute top-0 z-50 text-services-container">
@@ -63,13 +69,16 @@ export const Home = ({ color }) => {
 
       {/* CRITERIA */}
       <section className="flex flex-col p-10 sm:p-20 sm:px-4 bg-gray-50">
-        <Typography as="h1" className="uppercase font-700 text-3xl sm:text-4xl text-center">
+        <Typography
+          as="h1"
+          className="uppercase font-700 text-3xl sm:text-4xl text-center animate__animated title-section"
+        >
           Criterios
         </Typography>
 
         <article className="grid sm:w-4/6 sm:mx-auto md:w-full md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 px-0 sm:px-5 py-10 gap-3">
           {criteria.map((crit, i) => (
-            <aside key={i} className="shadow-xl bg-white rounded-lg">
+            <aside key={i} className="shadow-xl bg-white rounded-lg animate__animated home-criterios">
               <a href="#">
                 <img
                   src={crit.image}
@@ -90,19 +99,26 @@ export const Home = ({ color }) => {
           ))}
         </article>
 
-        <button className="w-fit capitalize font-400 text-md py-2 px-7 rounded-md mx-auto mt-5 border-2 transition-all duration-700 border-blueDark text-dark bg-white button-view-all-criteria">
+        <button className="w-fit capitalize font-400 text-md py-2 px-7 rounded-md mx-auto mt-5 border-2 transition-all duration-700 border-blueDark text-dark bg-white button-view-all-criteria button-section animate__animated">
           Ver todos
         </button>
       </section>
 
       <section className="flex flex-col p-10 sm:p-20 sm:px-4 bg-white">
-        <Typography as="h1" className="uppercase font-700 text-3xl sm:text-4xl text-center">
+        <Typography
+          as="h1"
+          className="uppercase font-700 text-3xl sm:text-4xl text-center animate__animated title-section"
+        >
           Casos Prácticos
         </Typography>
 
         <article className="grid sm:w-4/6 sm:mx-auto md:w-full md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 px-4 mt-10">
           {cases.map((c, i) => (
-            <a href="#" key={i} className="h-96 relative hover:opacity-90 transition-all practical-cases">
+            <a
+              href="#"
+              key={i}
+              className="h-96 relative hover:opacity-90 transition-all practical-cases animate__animated"
+            >
               <img src={c.image} alt="" className="h-full w-full object-cover" />
               <div className="shadow absolute top-0 w-full h-full px-8 flex flex-col justify-center">
                 <Typography as="h2" className="uppercase text-white text-2xl font-500">

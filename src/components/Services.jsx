@@ -23,7 +23,7 @@ export const Services = ({ color }) => {
     <>
       <Header color={color} />
 
-      <Typography as="h1" className="font-400 text-center text-4xl pt-8 w-4/6 mx-auto">
+      <Typography as="h1" className="font-400 text-center text-4xl pt-8 w-4/6 mx-auto mt-20">
         En <b>INFANTE, FERNANDEZ & ASOCIADOS</b> te ofrecemos la mejor calidad en nuestros servicios
       </Typography>
 
