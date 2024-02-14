@@ -66,15 +66,18 @@ export const CarouselImages = ({ slides }) => {
 
       {/* ITEM 4 */}
       <div className="w-full">
-        <img src={slides[3]} alt="" className="w-screen" />
+        <img src={slides[3]} alt="" className="w-screen h-full object-cover" />
         <div className="absolute flex flex-col items-end w-screen top-5 bottom-5 bg-gradient-to-r from-transparent to-blue">
           <Typography
             as="h1"
-            className="w-3/6 text-start my-auto mr-16 text-5xl font-plus text-white leading-12 font-500"
+            className="w-9/12 sm:w-8/12 md:w-7/12 xl:w-3/6 text-start my-auto mr-10 sm:mr-16 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-400 md:font-300 text-white leading-8 md:leading-12 font-500"
           >
             CONTACTA NUESTRA <br /> <span className="font-700">RED DE MENTORES</span>
           </Typography>
-          <Typography as="p" className="w-3/6 text-start my-auto -mt-10 mr-16 text-3xl font-plus text-white leading-12">
+          <Typography
+            as="p"
+            className="w-9/12 sm:w-8/12 md:w-7/12 xl:w-3/6 text-start my-auto -mt-0 mr-10 sm:mr-16 text-xl md:text-2xl lg:text-3xl font-400 md:font-300 text-white leading-8 md:leading-10 lg:leading-12"
+          >
             Acompaña tu <span className="uppercase font-bold">EMPRENDIMIENTO</span> y{" "}
             <span className="uppercase font-bold">FISCALES</span> compartiendo enseñanzas y experiencias en la creación
             de negocios exitosos.
@@ -84,15 +87,24 @@ export const CarouselImages = ({ slides }) => {
 
       {/* ITEM 5 */}
       <div className="w-full">
-        <img src={slides[4]} alt="" className="w-screen" />
+        <img src={slides[4]} alt="" className="w-screen h-full object-fill" />
         <div className="absolute flex flex-col justify-center items-end w-screen top-5 bottom-5 bg-gradient-to-r from-transparent to-blue">
-          <Typography as="p" className="w-3/6 text-start mb-10 mr-16 text-3xl font-plus text-white leading-12">
+          <Typography
+            as="p"
+            className="w-9/12 sm:w-8/12 md:w-7/12 xl:w-3/6 text-start my-auto mr-10 sm:mr-16 text-xl md:text-2xl lg:text-3xl font-400 md:font-300 text-white leading-8 md:leading-10 lg:leading-12"
+          >
             COMIENZA EL CAMINO AL ÉXITO SIENDO DUEÑO DE TU PROPIO NEGOCIO
           </Typography>
-          <Typography as="h1" className="w-3/6 text-start mb-2 mr-16 text-5xl font-plus text-white leading-12 font-500">
+          <Typography
+            as="h1"
+            className="w-9/12 sm:w-8/12 md:w-7/12 xl:w-3/6 text-start my-auto mt-2 md:-mt-4 mr-10 sm:mr-16 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-400 md:font-300 text-white leading-8 md:leading-12 font-500"
+          >
             <span className="font-700">CONSTITUIMOS TU EMPRESA PYME</span>
           </Typography>
-          <Typography as="p" className="w-3/6 text-start mr-16 text-3xl font-plus text-white leading-12">
+          <Typography
+            as="p"
+            className="w-9/12 sm:w-8/12 md:w-7/12 xl:w-3/6 text-start my-auto -mt-0 mr-10 sm:mr-16 text-xl md:text-2xl lg:text-3xl font-400 md:font-300 text-white leading-8 md:leading-10 lg:leading-12"
+          >
             Consulta nuestros Planes Constitutivos
           </Typography>
         </div>

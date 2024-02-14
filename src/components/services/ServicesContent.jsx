@@ -54,6 +54,7 @@ import {
   URLventaAcciones,
 } from "../../helpers/subservicesObjects";
 import { URLasesoriaFinanciera, URLasesoriaLaboral, URLauditoriaCuentas } from "../../helpers/asesoriaObjects";
+import { Footer } from "../Footer";
 
 export const ServicesContent = ({ color }) => {
   const params = useParams();
@@ -112,6 +113,8 @@ export const ServicesContent = ({ color }) => {
       {params.id === "auditoriaCuentas" ? <AuditoriaCuentas subservice={URLauditoriaCuentas} /> : ""}
       {params.id === "asesoriaLaboral" ? <AsesoriaLaboral subservice={URLasesoriaLaboral} /> : ""}
       {params.id === "asesoriaFinanciera" ? <AsesoriaFinanciera subservice={URLasesoriaFinanciera} /> : ""}
+
+      <Footer color={color} />
     </>
   );
 };

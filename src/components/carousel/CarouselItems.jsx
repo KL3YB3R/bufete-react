@@ -18,7 +18,7 @@ export const CarouselItems = ({ slides, autoSlide = false, autoSlideInterval = 3
     <div className="overflow-hidden relative w-screen z-30">
       {/* SLIDES FROM CAROUSEL */}
       <div
-        className="flex transition-transform z-30 ease-out duration-500 w-max h-80 md:h-100 xl:h-104  relative"
+        className="flex transition-transform z-30 ease-out duration-500 w-max h-80 md:h-100 xl:h-128  relative"
         style={{ transform: `translateX(-${curr * 100}vw)` }}
       >
         <CarouselImages slides={slides} />
