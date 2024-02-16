@@ -40,6 +40,7 @@ module.exports = withMT({
         102: "30rem",
         104: "32rem",
         128: "36rem",
+        132: "40rem",
       },
       lineHeight: {
         12: "45px",

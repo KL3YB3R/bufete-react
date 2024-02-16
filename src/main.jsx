@@ -3,14 +3,14 @@ import ReactDOM from "react-dom/client";
 import { ThemeProvider } from "@material-tailwind/react";
 
 import "./index.css";
-import { Index } from "./components/Index";
 import { BrowserRouter } from "react-router-dom";
+import { AppRouter } from "./router/AppRouter";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <ThemeProvider>
       <BrowserRouter>
-        <Index />
+        <AppRouter />
       </BrowserRouter>
     </ThemeProvider>
   </React.StrictMode>
