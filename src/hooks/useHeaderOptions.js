@@ -1,4 +1,7 @@
 import { useState } from "react";
+import iconBlue from "./../assets/img/logo-blue.png";
+import iconOrange from "./../assets/img/logo-orange.png";
+import { D, W } from "./../utils/variables";
 
 export const useHeaderOptions = () => {
   const [rotateButton, setRotateButton] = useState(false);

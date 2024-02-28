@@ -111,6 +111,14 @@ html {
   animation: showText 0.3s forwards;
 }
 
+/* ! ABOUT US */
+.img-about {
+  border-top-right-radius: 500px;
+  border-top-left-radius: 300px;
+  border-bottom-right-radius: 300px;
+  border-bottom-left-radius: 500px;
+}
+
 /* ! SERVICES */
 
 .service-option > a:hover {

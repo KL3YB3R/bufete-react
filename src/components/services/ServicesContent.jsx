@@ -1,5 +1,32 @@
 import { useParams } from "react-router-dom";
 import { Header } from "../Header";
+import { URLasesoriaFinanciera, URLasesoriaLaboral, URLauditoriaCuentas } from "../../helpers/asesoriaObjects";
+import {
+  URLaccionReivindicatoria,
+  URLconsorcios,
+  URLcontratoCompraVenta,
+  URLcontratos,
+  URLgestionCobranza,
+  URLinstitucionesFamiliares,
+  URLinterdictoAmparoRestitutorio,
+  URLpoderEspecialGeneral,
+  URLprescripcionAdquisitiva,
+  URLredaccionesDerechoCivil,
+  URLregistroInmmobiliario,
+  URLtituloSupletorio,
+} from "../../helpers/abogadosObject";
+import {
+  URLaperturaSucursalExtranjera,
+  URLaumentoCapital,
+  URLcambioDomicilio,
+  URLconstitucionEmpresas,
+  URLconstitucionPymes,
+  URLempresas,
+  URLestatutos,
+  URLfusionEmpresas,
+  URLplanes,
+  URLventaAcciones,
+} from "../../helpers/consultoriaObejcts";
 import {
   AperturaSucursalExtranjera,
   AuditoriaCostosLaborales,
@@ -20,6 +47,7 @@ import {
   ContratoCompraVenta,
   Contratos,
   GestionCobranza,
+  InstitucionesFamiliares,
   InterdictoAmparo,
   PoderEspecialGeneral,
   PrescripcionAdquisitiva,
@@ -28,32 +56,7 @@ import {
   TitulosSupletorio,
 } from "./subservices/abogados";
 import { AsesoriaFinanciera, AsesoriaLaboral, AuditoriaCuentas } from "./subservices/asesoria";
-import {
-  URLaccionReivindicatoria,
-  URLaperturaSucursalExtranjera,
-  URLauditoriaCostosLaborales,
-  URLaumentoCapital,
-  URLcambioDomicilio,
-  URLconsorcios,
-  URLconstitucionEmpresas,
-  URLconstitucionPymes,
-  URLcontratoCompraVenta,
-  URLcontratos,
-  URLempresas,
-  URLestatutos,
-  URLfusionEmpresas,
-  URLgestionCobranza,
-  URLinterdictoAmparoRestitutorio,
-  URLoutsourcingRRHH,
-  URLplanes,
-  URLpoderEspecialGeneral,
-  URLprescripcionAdquisitiva,
-  URLredaccionesDerechoCivil,
-  URLregistroInmmobiliario,
-  URLtituloSupletorio,
-  URLventaAcciones,
-} from "../../helpers/subservicesObjects";
-import { URLasesoriaFinanciera, URLasesoriaLaboral, URLauditoriaCuentas } from "../../helpers/asesoriaObjects";
+
 import { Footer } from "../Footer";
 
 export const ServicesContent = ({ color }) => {
@@ -61,7 +64,7 @@ export const ServicesContent = ({ color }) => {
 
   return (
     <>
-      <Header color={color} />
+      <Header color={color} option="services" />
       <main className="p-0 mt-20">
         {/* // ! CONSULTORIA EMPRESARIAL */}
         {params.id === "constitucionEmpresa" ? <ConstitucionEmpresa subservice={URLconstitucionEmpresas} /> : ""}
@@ -109,6 +112,11 @@ export const ServicesContent = ({ color }) => {
         {params.id === "contratoCompraventa" ? <ContratoCompraVenta subservice={URLcontratoCompraVenta} /> : ""}
         {params.id === "poderEspecialGeneral" ? <PoderEspecialGeneral subservice={URLpoderEspecialGeneral} /> : ""}
         {params.id === "gestionCobranza" ? <GestionCobranza subservice={URLgestionCobranza} /> : ""}
+        {params.id === "institucionesFamiliares" ? (
+          <InstitucionesFamiliares subservice={URLinstitucionesFamiliares} />
+        ) : (
+          ""
+        )}
 
         {/* // ! ASESORIA PROFESIONAL */}
         {params.id === "auditoriaCuentas" ? <AuditoriaCuentas subservice={URLauditoriaCuentas} /> : ""}

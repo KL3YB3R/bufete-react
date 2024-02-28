@@ -9,3 +9,4 @@ export * from "./RegistroInmobiliario";
 export * from "./ContratoCompraVenta";
 export * from "./PoderEspecialGeneral";
 export * from "./GestionCobranza";
+export * from "./InstitucionesFamiliares";

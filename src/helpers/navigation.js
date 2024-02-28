@@ -1,4 +1,4 @@
-import { D, W } from "./../utils/variables";
+import { D, W } from "../utils/variables";
 
 import iconBlue from "./../assets/img/logo-blue.png";
 import iconOrange from "./../assets/img/logo-orange.png";
@@ -9,19 +9,24 @@ import { split } from "postcss/lib/list";
 function showActiveOption(optionClick) {
   D.querySelectorAll(".options-container .option-select").forEach((option) => {
     if (optionClick === option) {
-      optionClick.classList.add("text-white", "bg-blue", "md:text-black", "md:bg-blue-gray-50");
-      optionClick.classList.remove("md:border-b-white");
-    } else {
-      option.classList.remove(
-        "text-white",
-        "bg-blue",
-        "md:text-black",
-        "md:border-b-orange",
-        "md:border-b-blue",
-        "md:bg-blue-gray-50"
-      );
-      option.classList.add("md:border-b-white");
+      console.log(optionClick);
+      option.classList.add("text-white", "bg-blue", "md:text-black", "md:bg-blue-gray-50");
+      option.classList.remove("md:border-b-white");
+      changeColorOptions(option);
     }
+    // if (optionClick === option) {
+    //   // changeColorOptions(optionClick);
+    // } else {
+    //   option.classList.remove(
+    //     "text-white",
+    //     "bg-blue",
+    //     "md:text-black",
+    //     "md:border-b-orange",
+    //     "md:border-b-blue",
+    //     "md:bg-blue-gray-50"
+    //   );
+    //   option.classList.add("md:border-b-white");
+    // }
   });
 }
 
@@ -91,7 +96,7 @@ D.addEventListener("click", (e) => {
     showActiveOption(e.target);
     // history.pushState(null, "", e.target.dataset.name);
   }
-  if (e.target.matches(".button-home") || e.target.matches(".option-select")) {
+  if (e.target.matches(".button-home")) {
     e.preventDefault();
     // showOrHideMain(e.target.dataset.name);
     changeColorOptions(e.target);

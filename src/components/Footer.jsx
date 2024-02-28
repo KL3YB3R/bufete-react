@@ -14,7 +14,7 @@ export const Footer = ({ color }) => {
       <article className="w-12/12 sm:w-4/12 flex justify-center mt-3 mb-3 sm:mt-0 sm:mb-0">
         <img src={color === "blue" ? LogoFooterBlue : LogoFooterOrange} alt="" className="w-40 h-full" />
       </article>
-      <Typography as="p" className="w-12/12 sm:w-4/12 text-center mb-3 sm:mb-0 font-400">
+      <Typography as="p" className="w-12/12 sm:w-4/12 text-center text-md mb-3 sm:mb-0 font-400">
         (C) Copyright 2024. Todos los derechos reservados
       </Typography>
       <article className="w-12/12 sm:w-4/12 flex justify-center">

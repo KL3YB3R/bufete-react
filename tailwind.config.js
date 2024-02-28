@@ -44,6 +44,7 @@ module.exports = withMT({
       },
       lineHeight: {
         12: "45px",
+        14: "60px",
       },
       boxShadow: {
         "3xl": "-4px 0px 10px 0px rgba(0, 0, 0, 0.5);",

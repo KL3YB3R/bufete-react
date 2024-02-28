@@ -1,5 +1,2 @@
-[
-{
-content:hola
-}
-]
+<?php
+echo json_encode("hola");

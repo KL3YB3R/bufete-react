@@ -19,7 +19,7 @@ export const Button = ({ content }) => {
       >
         <img src={content.image} alt="" className="w-8 sm:w-12 md:w-16 pointer-events-none" />
       </span>
-      <Typography as="p" className="font-600 uppercase text-xs sm:text-sm md:text-md">
+      <Typography as="p" className="font-600 uppercase w-5/6 text-xs sm:text-sm md:text-md">
         {content.name}
       </Typography>
     </button>

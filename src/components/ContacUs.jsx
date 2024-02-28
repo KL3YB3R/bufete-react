@@ -14,7 +14,7 @@ export const ContacUs = ({ color }) => {
 
   return (
     <>
-      <Header color={color} />
+      <Header color={color} option="contactanos" />
 
       <section className="mt-20 flex justify-center items-center h-screen">
         {/* // ! CONTACT CARD */}

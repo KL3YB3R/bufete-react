@@ -172,6 +172,12 @@ export const useArrayServices = () => {
       description:
         "Contamos con especialistas en el área de crédito y cobranza, tanto judiciales como extrajudiciales, de manera de documentar de la mejor forma a tu empresa o emprendimiento sobre esa acreencia.",
     },
+    {
+      title: "Instituciones Familiares a la luz de la LOPNNA",
+      url: "institucionesFamiliares",
+      description:
+        "Te brindamos asesoría, asistencia y representacion en todos los casos que la familia lo necesite: Divorcio, separación de cuerpo o de bienes, etc.",
+    },
   ];
 
   const subservicesAseroria = [
